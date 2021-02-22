@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<!-- styless sheet -->
+		<link rel="stylesheet" href="./styles.css" />
+		<!-- font awesome -->
+		<script src="https://kit.fontawesome.com/7f08385778.js" crossorigin="anonymous"></script>
+		<title>student || mentor || assignment</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center mt-3">Mentor and Student Assigning</h1>
+		</div>
+		<div class="container">
+			<div class="row text-center d-flex justify-content-around">
+				<div class="col col-lg-4 col-md-12 beforeCard">
+					<div class="card" style="width: 22rem">
+						<div>
+							<i class="fas fa-user-friends student-icon"></i>
+							<div class="card-body">
+								<h5 class="mb-3">Add Student Here</h5>
+								<input
+									type="text"
+									name="studentName"
+									id="studentName"
+									class="form-control"
+									placeholder="Student Name"
+								/>
+								<button type="button" id="student-submit" class="btn btn-primary form-control my-3">
+									Submit
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-lg-4 col-md-12 beforeCard">
+					<div class="card" style="width: 22rem">
+						<i class="fas fa-user-tie mentor-icon"></i>
+						<div class="card-body">
+							<div></div>
+							<h5 class="mb-3">Add Mentor Here</h5>
+							<input
+								type="text"
+								name="mentorName"
+								id="mentorName"
+								class="form-control"
+								placeholder="Mentor Name"
+							/>
+							<button type="button" id="menor-sumbit" class="btn btn-primary form-control my-3">
+								Submit
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="links container mt-5">
+			<a href="./assign.html">Assign A mentor to Student</a>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
